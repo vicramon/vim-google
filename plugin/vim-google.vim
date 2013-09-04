@@ -1,5 +1,5 @@
 fun! URLEncode(params)
-  let params =  system("echo $(perl -MURI::Escape -e 'print uri_escape($ARGV[0]);' \"" . a:params . "\")")
+  let params = system("echo $(perl -MURI::Escape -e 'print uri_escape($ARGV[0]);' \"" . a:params . "\")")
   return params
 endfun
 
